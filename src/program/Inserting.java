@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 public class Inserting {
     public void insertTheElement(){
-        int n,position,value;
+        int n,value,index;
         Scanner sc=new Scanner(System.in);
         System.out.println("enter the array size:");
         n=sc.nextInt();
@@ -12,14 +12,26 @@ public class Inserting {
         for(int i=0;i<n;i++)
             array[i]=sc.nextInt();
         System.out.println("Array elements are :" + Arrays.toString(array));
-        System.out.println("enter the index where new element to be inserted:");
-        position=sc.nextInt();
-        System.out.println("enter the value to be inserted:");
+        Arrays.sort(array);
+        System.out.println("sorted array is : " + Arrays.toString(array));
+        System.out.println("enter the index:");
+        index=sc.nextInt();
+        System.out.println("index is:"+ index);
+        System.out.println("enter the value:");
         value=sc.nextInt();
-        int [] resultantarray=new int[array.length+1];
-        System.arraycopy(array,0,resultantarray,0,position);
-        resultantarray[position]=value;
-        System.arraycopy(array,position,resultantarray,position+1,array.length-position);
-        System.out.println("new array is " + Arrays.toString(resultantarray));
+        System.out.println("value is:"+ value);
+        int [] newarray=new int[n+1];
+        for(int i=0,j=0;i<n&j<=n;i++,j++){
+            if (index == j) {
+                newarray[j] = value;
+                i--;
+            }
+            if(index!=j){
+                newarray[j]=array[i];
+            }
+        }
+        for(int i=0;i<n+1;i++)
+            System.out.println("new array is :" + newarray[i]);
     }
+
 }
