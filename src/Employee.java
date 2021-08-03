@@ -4,12 +4,8 @@ public class Employee{
     private double salary;
     private int age;
     private String city;
-    public Employee(String name,int id,double salary,int age ,String city){
-        this.name=name;
-        this.id =id;
-        this.salary=salary;
-        this.age=age;
-        this.city=city;
+    public Employee(){
+      
     }
     public String getName() {
         return name;
@@ -51,6 +47,6 @@ public class Employee{
         this.city = city;
     }
     public void print() {
-        System.out.println("name is: " + name+", "+"id is: "+id+", "+"salary is : "+salary+", "+"age is: "+age+", "+"city is: "+city);
+       System.out.println("Employee Name : " + getName()+", "+"Id : "+getId()+", "+"Salary : "+getSalary()+", "+"Age : "+getAge()+", "+"City: "+getCity());
     }
 }
