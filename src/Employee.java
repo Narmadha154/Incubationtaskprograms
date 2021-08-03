@@ -46,7 +46,7 @@ public class Employee{
     public void setCity(String city) {
         this.city = city;
     }
-    public void print() {
-       System.out.println("Employee Name : " + getName()+", "+"Id : "+getId()+", "+"Salary : "+getSalary()+", "+"Age : "+getAge()+", "+"City: "+getCity());
+    public String toString() {
+        return name+ " " + id + " " + salary + " " + age + " " + city;
     }
 }
