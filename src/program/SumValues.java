@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class SumValues {
     public void sumofvalues(){
-        int n;
+        int n,sum=0;
         Scanner sc=new Scanner(System.in);
         System.out.println("enter the array size:");
         n=sc.nextInt();
@@ -14,7 +14,9 @@ public class SumValues {
         for(int i=0;i<n;i++)
             array[i]=sc.nextInt();
         System.out.println("Array elements are :" + Arrays.toString(array));
-        int sum= Arrays.stream(array).sum();
+        for(int i=0;i<n;i++){
+            sum=sum+array[i];
+        }
         System.out.println(" sum of values in a numeric array is " + sum);
     }
 }
