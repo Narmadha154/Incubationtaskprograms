@@ -13,8 +13,9 @@ public class Maxmin {
         for(int i=0;i<n;i++)
             array[i]=sc.nextInt();
         System.out.println("Array elements are :" + Arrays.toString(array));
-       int maximum= Arrays.stream(array).min().getAsInt();
-       int minimum= Arrays.stream(array).max().getAsInt();
+        Arrays.sort(array);
+       int maximum= array[n-1];
+       int minimum= array[0];
        System.out.println("Minimum value is " + maximum);
        System.out.println("Maximum value is " + minimum);
     }
