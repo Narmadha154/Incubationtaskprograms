@@ -1,7 +1,9 @@
 import java.util.Scanner;
 public class StringReverse {
     public static String reverse(String s){
-        return new StringBuilder(s).reverse().toString();
+        StringBuilder sb=new StringBuilder(s);
+        sb.reverse();
+        return sb.toString();
     }
     public static void main(String [] args){
         String str;
