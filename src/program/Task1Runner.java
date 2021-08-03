@@ -71,6 +71,9 @@ public class Task1Runner {
                 Leaders lead=new Leaders();
                 lead.findleaders();
                 break;
+           default:
+                System.out.println("no program");
+                break;
         }
     }
 }
