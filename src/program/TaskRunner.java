@@ -16,7 +16,7 @@ public class TaskRunner {
                 values.sumOfValues();
                 break;
             case 3:
-                Removal element = new Removal();
+                Remove element = new Remove();
                 element.removeTheElement();
                 break;
             case 4:
@@ -64,7 +64,7 @@ public class TaskRunner {
                 evenAndOdd.separateEvenOdd();
                 break;
             case 15:
-                Sorting sort = new Sorting();
+                Sort sort = new Sort();
                 sort.sortingOfArray();
                 break;
             case 16:

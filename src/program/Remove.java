@@ -1,7 +1,7 @@
 package program;
 import java.util.Arrays;
 import java.util.Scanner;
-public class Removal {
+public class Remove {
     public void removeTheElement() {
         int n,value;
         Scanner sc=new Scanner(System.in);
