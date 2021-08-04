@@ -1,9 +1,8 @@
 package program;
 import java.util.Arrays;
 import java.util.Scanner;
-
 public class Average {
-    public void findaverage(){
+    public void findAverage(){
         int n,sum=0;
         Scanner sc=new Scanner(System.in);
         System.out.println("enter the array size:");

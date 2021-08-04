@@ -1,11 +1,13 @@
+package task;
+
 enum Rainbow{
     VIOLET(1),INDIGO(2),BLUE(3),GREEN(4),YELLOW(5),ORANGE(6),RED(7);
-    private int ColorCode;
+    private int colorCode;
     Rainbow(int ColorCode){
-      this.ColorCode=ColorCode;
+      this.colorCode =ColorCode;
     }
     public int getColorCode(){
-        return this.ColorCode;
+        return this.colorCode;
     }
 }
 public class EnumDemo{

@@ -1,8 +1,8 @@
 package program;
 import java.util.Arrays;
 import java.util.Scanner;
-public class Checking {
-    public void containsThevalue(){
+public class Check{
+    public void containsTheValue(){
         int n,element;
         boolean test=false;
         Scanner sc=new Scanner(System.in);

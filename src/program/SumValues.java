@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class SumValues {
-    public void sumofvalues(){
+    public void sumOfValues(){
         int n,sum=0;
         Scanner sc=new Scanner(System.in);
         System.out.println("enter the array size:");

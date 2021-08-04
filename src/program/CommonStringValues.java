@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class CommonStringValues {
-    public void findcommonstrings(){
+    public void findCommonStrings(){
         Scanner sc=new Scanner(System.in);
         System.out.println("enter the number of strings for first array:");
         String[]string1=new String[sc.nextInt()];

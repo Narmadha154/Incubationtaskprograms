@@ -1,18 +1,17 @@
 package program;
-
 import java.util.Arrays;
 import java.util.Scanner;
-
 public class TargetValue {
-    public void sumoftwoelements(){
+    public void sumOfTwoElements(){
         int n,count=0,target;
         Scanner sc=new Scanner(System.in);
         System.out.println("enter the array size:");
         n=sc.nextInt();
         int [] array=new int[n];
         System.out.println("enter the elements:");
-        for(int i=0;i<n;i++)
-            array[i]=sc.nextInt();
+        for(int i=0;i<n;i++) {
+            array[i] = sc.nextInt();
+        }
         System.out.println("Array elements are :" + Arrays.toString(array));
         System.out.println("enter the target value :");
         target=sc.nextInt();

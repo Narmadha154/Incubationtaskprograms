@@ -1,3 +1,5 @@
+package task;
+
 import java.util.Scanner;
 public class ReverseMessage{
     public static StringBuilder reverse_words(String s){

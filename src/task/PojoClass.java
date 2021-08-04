@@ -1,3 +1,7 @@
+package task;
+
+import task.Employee;
+
 public class PojoClass {
     public static void main(String[] args) {
         Employee obj =new Employee();
@@ -6,6 +10,6 @@ public class PojoClass {
         obj.setSalary(10000.00);
         obj.setAge(25);
         obj.setCity("Karaikudi");
-        System.out.println(obj.toString());
+        System.out.println(obj);
     }
 }

@@ -1,6 +1,6 @@
 package program;
 import java.util.Scanner;
-public class Task1Runner {
+public class TaskRunner {
     public static void main(String [] args){
         int number;
         Scanner sc=new Scanner(System.in);
@@ -8,70 +8,70 @@ public class Task1Runner {
         number=sc.nextInt();
         switch(number) {
             case 1:
-                Index b = new Index();
-                b.findIndex();
+                Index index = new Index();
+                index.findIndex();
                 break;
             case 2:
                 SumValues values = new SumValues();
-                values.sumofvalues();
+                values.sumOfValues();
                 break;
             case 3:
                 Removal element = new Removal();
                 element.removeTheElement();
                 break;
             case 4:
-                Inserting newvalue = new Inserting();
-                newvalue.insertTheElement();
+                Insert newValue = new Insert();
+                newValue.insertTheElement();
                 break;
             case 5:
-                Checking theelement = new Checking();
-                theelement.containsThevalue();
+                Check theElement = new Check();
+                theElement.containsTheValue();
                 break;
             case 6:
                 Maxmin num = new Maxmin();
-                num.findmaximini();
+                num.findMaxiMini();
                 break;
             case 7:
                 CommonStringValues strings=new CommonStringValues();
-                strings.findcommonstrings();
+                strings.findCommonStrings();
                 break;
             case 8:
-                Common commonone = new Common();
-                commonone.findcommonelements();
+                Common commonOne = new Common();
+                commonOne.findCommonElements();
                 break;
             case 9:
-                RemoveDuplicate elementsofarray = new RemoveDuplicate();
-                elementsofarray.removeDuplicateElements();
+                RemoveDuplicate elementsOfArray = new RemoveDuplicate();
+                elementsOfArray.removeDuplicateElements();
                 break;
             case 10:
                 EvenOdd integers = new EvenOdd();
-                integers.findevenodd();
+                integers.findEvenOdd();
                 break;
             case 11:
-                Average avg = new Average();
-                avg.findaverage();
+                Average average= new Average();
+                average.findAverage();
                 break;
             case 12:
                 TargetValue sum=new TargetValue();
-                sum.sumoftwoelements();
+                sum.sumOfTwoElements();
                 break;
             case 13:
-                Reversing arrayofintegers = new Reversing();
-                arrayofintegers.reversingthearray();
+                Reverse arrayOfIntegers = new Reverse();
+                arrayOfIntegers.reversingTheArray();
                 break;
             case 14:
-                Separate evenandodd = new Separate();
-                evenandodd.separateEvenOdd();
+                Separate evenAndOdd = new Separate();
+                evenAndOdd.separateEvenOdd();
                 break;
             case 15:
                 Sorting sort = new Sorting();
-                sort.sortingofarray();
+                sort.sortingOfArray();
                 break;
             case 16:
                 Leaders lead=new Leaders();
-                lead.findleaders();
+                lead.findLeaders();
                 break;
-           default:
+            default:
                 System.out.println("no program");
                 break;
         }
